@@ -1,5 +1,5 @@
-var button = document.getElementById("button")
+var button = document.getElementById("button")?.onclick
 
-if (button != undefined) ()=> {
-    alert("Hi")
+button = function(){
+    alert("hi")
 }
