@@ -1,0 +1,8 @@
+.body {
+    background-color: aqua;
+}
+
+.button {
+    font-size: 40px;
+    display: flex;
+}
