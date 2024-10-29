@@ -4,27 +4,30 @@
     <meta charset="utf-8">
     <title>Quadratic Equation Solver</title>
     <link rel="icon" type="image/x-icon" href="/images/delta.png">
-    <!-- <link rel="icon" href= "https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png" type="image/x-icon" /> -->
   </head>
   <body>
     <div class="generalText">
       <h1 class="glow">Biện luận số nghiệm của phương trình bậc 2</h1>
-      <h2>
-        <span class="rainbowText">Bài Toán:</span>
-        <span>Xác định số nghiệm của phương trình ax <sup>2</sup> + bx + c (a!=0) </span>
-      </h2>
-
-      <h2><span class="rainbowText">Cách làm:</span></h2>
-
-      <p class="size1"><b>B<sub>1</sub>: </b><span>Xác định hệ số a, b và c</span></p>
-
-      <p class="size1"><b>B<sub>2</sub>:</b> Tính <span class="rainbowTextReverse"><b>delta</b></span> = b<sup>2</sup> - 4ac</p>
       
-      <p class="size1"><b>B<sub>3</sub>: </b>Kết luận 
+      <div class="border">
+        <h2>
+          <span class="rainbowText">Bài Toán:</span>
+          <span class="size1">Xác định số nghiệm của phương trình ax <sup>2</sup> + bx + c (a!=0) </span>
+        </h2>
+  
+        <h2><span class="rainbowText">Cách làm:</span></h2>
+  
+        <p class="size1"><b>B<sub>1</sub>: </b><span>Xác định hệ số a, b và c</span></p>
+  
+        <p class="size1"><b>B<sub>2</sub>:</b> Tính <span class="rainbowTextReverse"><b>delta</b></span> = b<sup>2</sup> - 4ac</p>
+        
+        <p class="size1">
+          <b >B<sub>3</sub>: </b>Kết luận 
           <br>+ Nếu <span class="rainbowTextReverse"><b>delta</b></span> < 0: Phương trình vô nghiệm 
           <br>+ Nếu <span class="rainbowTextReverse"><b>delta</b></span> = 0: Phương trình có nghiệm duy nhất 
           <br>+ Nếu <span class="rainbowTextReverse"><b>delta</b></span> > 0: Phương trình có hai nghiệm phân biệt
-      </p>
+        </p>
+      </div>
     </div>
   </body>
 </html>
@@ -38,7 +41,7 @@
   }
 
   .size1 {
-    font-size: 18px;
+    font-size: 30px;
   }
 
   .rainbowText {
@@ -56,7 +59,7 @@
     color: transparent;
     background-size: 500% 100%;
     animation: moveBackground 3s linear infinite;
-    font-size: 30px;
+    font-size: 40px;
   }
 
   .rainbowTextReverse {
@@ -77,10 +80,22 @@
   }
 
   .glow {
-    font-size: 50px;
+    font-size: 60px;
     font-family: "SVN-Dancing Script", cursive;
     text-align: center;
     animation: glow 3s ease-in-out infinite alternate;
+  }
+
+  .border {
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 20px;
+    padding-left: 6%;
+    padding-right: 6%;
+    box-shadow: 0px 0px 100px -20px rgba(121, 119, 119, 0.199) inset, 0px 0px 100px -10px rgb(61, 59, 60);
+
+    border-radius: 25px;
+    border: 2px solid #8a9190d0;
   }
     
   @keyframes moveBackground {
